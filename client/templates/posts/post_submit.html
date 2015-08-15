@@ -1,0 +1,24 @@
+<template name="postSubmit">
+  <form class="main form page">
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
+      </div>
+    </div>
+    <div class="form-group {{errorClass 'content'}}">
+      <label class="control-label" for="content">Content</label>
+    </div>
+    <!--<div class="controls">
+      {{> editableText collection="posts" textarea=true field="content" wysiwyg=true}}
+    </div>-->
+      <div class="controls">
+          <textarea name="content" id="content"  placeholder="Content" class="form-control" rows="3"></textarea>
+          <span class="help-block">{{errorMessage 'content'}}</span>
+      </div>
+      <span class="help-block">{{errorMessage 'content'}}</span>
+
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>
