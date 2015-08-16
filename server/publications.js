@@ -20,3 +20,8 @@ Meteor.publish('comments', function(postId) {
 Meteor.publish('notifications', function() {
   return Notifications.find({userId: this.userId, read: false});
 });
+
+Meteor.publish('images', function(){
+//  check(imageId, String);
+  return UploadCollection.find();
+});

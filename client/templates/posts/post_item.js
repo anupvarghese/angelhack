@@ -14,16 +14,15 @@ Template.postItem.helpers({
     } else {
       return 'disabled';
     }
+  },
+  fromNow: function(date){
+    if (date)
+      return moment(date).fromNow(true) + ' ago';
   }
+
 });
-/*
-Template.postItem.events({
-  'click .upvotable': function(e) {
-    e.preventDefault();
-    Meteor.call('upvote', this._id);
-  }
-});
-*/
+
+
 
 $(document).ready(function() {
     var showChar = 10;

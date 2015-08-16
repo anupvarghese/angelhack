@@ -1,0 +1,16 @@
+<template name="postImage">
+  <!--{{if imagePath}}-->
+  <input type="hidden" value={{imgs imagePath}} />
+  <img src={{this.url}} class="img-rounded" alt="{{this.url}}" width="100%" >
+<!--  {{/if}} -->
+  <!--{{#if imagePath}}
+  <div class="imageView">
+      {{#each imgs}}
+    <div>
+    <img src="{{this.url}}" alt="{{this.url}}" width='100%' class="thumbnail">
+    <img src={{downloadImage imagePath}} alt="" />
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}-->
+</template>

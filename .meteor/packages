@@ -13,3 +13,11 @@ iron:router
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 babrahams:editable-text-wysiwyg-bootstrap-3
+cfs:standard-packages
+cfs:filesystem
+http
+momentjs:moment
+cfs:ui
+cfs:gridfs
+cfs:graphicsmagick
+lepozepo:s3

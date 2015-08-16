@@ -10,9 +10,13 @@
     <div class="form-group {{errorClass 'content'}}">
       <label class="control-label" for="content">Content</label>
     </div>
+    <div class="controls">
+      {{> uploadPhoto}}
+    </div>
     <!--<div class="controls">
       {{> editableText collection="posts" textarea=true field="content" wysiwyg=true}}
     </div>-->
+    <input type="hidden" id="picId" name="picId"/>
       <div class="controls">
           <textarea name="content" id="content"  placeholder="Content" class="form-control" rows="3"></textarea>
           <span class="help-block">{{errorMessage 'content'}}</span>

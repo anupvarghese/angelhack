@@ -16,8 +16,10 @@ Template.postSubmit.events({
     e.preventDefault();
 
     var post = {
+      createdAt: new Date(),
       content: $(e.target).find('[name=content]').val(),
-      title: $(e.target).find('[name=title]').val()
+      title: $(e.target).find('[name=title]').val(),
+      imagePath: $(e.target).find('[name=picId]').val()
     };
 
     var errors = validatePost(post);
