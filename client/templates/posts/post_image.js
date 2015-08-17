@@ -11,8 +11,3 @@ Template.postImage.helpers({
     return image;
   },
 });
-
-getImage = function (img) {
-  // body...
-  return UploadCollection.findOne({creatorId: img});
-}
