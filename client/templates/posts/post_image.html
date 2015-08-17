@@ -1,7 +1,9 @@
 <template name="postImage">
-  <!--{{if imagePath}}-->
-  <input type="hidden" value={{imgs imagePath}} />
-  <img src={{this.url}} class="img-rounded" alt="{{this.url}}" width="100%" >
+  <div class="imageView">
+    {{#with imgs imagePath}}
+    <img src="{{this.url}}" class="img-rounded" alt="nothing" width="100%" >
+    {{/with}}
+  </div>
 <!--  {{/if}} -->
   <!--{{#if imagePath}}
   <div class="imageView">

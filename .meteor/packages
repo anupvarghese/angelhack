@@ -19,5 +19,4 @@ http
 momentjs:moment
 cfs:ui
 cfs:gridfs
-cfs:graphicsmagick
 lepozepo:s3

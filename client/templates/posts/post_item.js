@@ -16,6 +16,7 @@ Template.postItem.helpers({
     }
   },
   fromNow: function(date){
+    //console.log("1");
     if (date)
       return moment(date).fromNow(true) + ' ago';
   }
